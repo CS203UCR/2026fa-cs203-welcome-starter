@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+echo "======= backing up your notebook before you proceed =========="
+#read
+
+cp assignment.ipynb assignment.backup.ipynb
+echo "======= commiting your changes =========="
+git commit -am "My progress so far."
+echo "======= pull updates =========="
+git pull --no-edit upstream main -X ours
