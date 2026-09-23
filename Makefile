@@ -51,7 +51,7 @@ perfstats.o: perfstats.c
 #	$(CC) $(CFLAGS) $(OPT_CFLAGS) $(INCLUDES) $(LDFLAGS) $^ $(LDLIBS) $(OUTPUT_FILE)
 
 test_gpt2: test_gpt2.c perfstats.o 
-	$(CC) $(CFLAGS) $(OPT_CFLAGS)  -DHAVE_LINUX_PERF_EVENT_H $(INCLUDES) $(LDFLAGS) $^ $(LDLIBS) $(OUTPUT_FILE) $(LIBS) -o test_gpt2
+	$(CC) $(CFLAGS) -O3 $(OPT_CFLAGS)  -DHAVE_LINUX_PERF_EVENT_H $(INCLUDES) $(LDFLAGS) $^ $(LDLIBS) $(OUTPUT_FILE) $(LIBS) -o test_gpt2
 
 
 %.exe: $(BUILD)%.o
