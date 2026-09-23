@@ -123,6 +123,6 @@ Then you can do (but fill in your @ucr.edu email and your name):
 
 ## Open the Notebook
 
-Switch to the tab with file browser and navigate to the directory you just cloned.   Click on `assignment-lab.ipynb` to open the lab and get to work!
+Switch to the tab with file browser and navigate to the directory you just cloned.   Click on `assignment.ipynb` to open the lab and get to work!
 
 **Note:** You'll need to trust the notebook when Jupyter asks.
