@@ -85,7 +85,7 @@ fatal: Authentication failed for 'https://github.com/cs203ucr/2026fa-cs203-perfo
 You may need to create an ssh key and add it to your github account.  You can create the key with (in your jupyterhub terminal):
 
 ```
-ssh-keygen
+ssh-keygen -t rsa
 ```
 
 and accept the defaults.  I recommend no password, so you don't have to type it all the time.
