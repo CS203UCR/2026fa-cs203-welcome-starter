@@ -246,7 +246,7 @@ int main(int argc, char *argv[])
                         function_map[function](vector, size);               
                         perfstats_disable();
                         sprintf(epilogue, ",%d\n",freq);
-                        perfstats_print(preamble, stat_file, epilogue);
+//                        perfstats_print(preamble, stat_file, epilogue);
                         perfstats_deinit();
                     }                                
                 }
