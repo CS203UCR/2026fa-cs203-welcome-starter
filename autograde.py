@@ -12,10 +12,10 @@ def autograde(submission=None, results=None):
     with open(os.path.join(submission, "test_gpt2.txt")) as f:
         feedback = ""
         text = f.read().strip()
-        count = sum(1 for _ in re.finditer(r'\b%s\b' % re.escape("matmul_backward"), text))
-        success = re.search("Trained\sby\s+\w+@ucr.edu", text) is not None 
+        count = sum(1 for _ in re.finditer(r'\b%s\b' % re.escape("matmul_"), text))
+        success = re.search(r"Trained\sby\s+\w+@ucr.edu", text) is not None
         success += (count == 490)
-        if re.search("Trained\sby\s+\w+@ucr.edu", text) is None:
+        if re.search(r"Trained\sby\s+\w+@ucr.edu", text) is None:
             feedback += "Cannot find the e-mail address of the trainer;"
         if count != 490:
             feedback += "The count of function calls is not correct;"
