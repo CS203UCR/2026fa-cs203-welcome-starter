@@ -236,7 +236,7 @@ int main(int argc, char *argv[])
         vector[i] = (temp >> 1) | (bit << 63);
     }
     for(auto & freq: frequencies ) {
-        change_cpufrequnecy(freq);
+//        change_cpufrequnecy(freq);
         for(auto & size: sizes ) {
             for(uint r = 0; r < reps; r++) {
                 for(auto & function : functions) {
@@ -251,7 +251,7 @@ int main(int argc, char *argv[])
                     }                                
                 }
             }
-        restore_cpufrequnecy();
+//        restore_cpufrequnecy();
         }
     std::cout << "Execution complete\n" ;
     return 0;
